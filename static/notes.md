@@ -81,3 +81,18 @@ html
     - `<script src="index.js" defer></script>`
     - altenatively, you can also add the JS inside the script tag
     - `defer` ensures that the HTML is all loaded before JS runs, so there are no unreachable html elements
+
+## Paragraphs and headings
+
+- go inside `body`
+- `p` - paragraph
+- `hX` - heading, has 6
+- best practices
+    - use one `h1` per page
+    - use n more than 3 heading types out of the 6 on a page
+- headings are considered by SEO, bcs search engines indexing the page consider the headings as keywords
+
+### Semantic vs representational elements
+
+- semantics: like when at a traffic light, red means stop, green means stop
+-  headings like `hX` are semantic elements. you can use `span` for example instead, but it has no semantic value

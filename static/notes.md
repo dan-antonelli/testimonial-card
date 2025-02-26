@@ -8,7 +8,10 @@
 - `<html lang="en-US"></html>`
 - `<link rel="icon" href="favicon.ico" type="image/x-ixon" />`
 - `<link rel="icon" href="favicon.ico" type="image/x-ixon" />`
+- `<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />` - external stylesheet
 - `<script src="index.js" defer></script>`
+- `<meta charset="utf-8" />`
+- `<meta name="viewport" content="width=device-width" />`
 
 ## Character references
 
@@ -115,3 +118,22 @@ html
     - `li`s can be nested for sub-items
 - description: `dl`, each item inside should be wrapped in `dt` (description term), and inside `dt`, things should be wrapped inside `dd` (description definition) element
     - a single `dt` can have multiple `dd`s
+
+## Structuring documents
+
+- header - logo, tagline and somesuch - `header` element
+    - as a child of `body`, it's the global header of the webpage, as a child of `article` or `section`, it defines a header for that element
+- navigation bar - links to the site's main sections - `nav` element
+- main content - most content of the page goes here - `main` elements, subsections go to `article`, `section`, and `div`
+    - `main` should be used once per page, inside `body`
+    - `article` - makes sense on its own, like a blog post
+    - `section` - e.g. a set of article headlines and summaries, can break up `article` into `section`s, use some heading `hX` nested inside `section`s
+- sidebar - peripheral info, secondary navigation system - `aside` element, usually inside `main`
+- footer - fine print, contact info, etc. - `footer` element
+- `span`, `div` - group together some elements to affect them with `class` attribute, non-semantic
+    - `span` - inline, use it for like a note
+    - `div` - block-level, use it for like a shopping cart widget
+
+### Line breaks and horizontal rules
+
+- `br`, `hr` (looks like a horizontal line)

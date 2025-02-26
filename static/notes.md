@@ -106,3 +106,12 @@ html
 ## Italic, bold, underline
 
 - `b`, `i`, `u` - presentational, frowned upon
+
+## Lists
+
+- ordered, unordered, description lists
+- unordered: `ul`, each item inside should be wrapped in `li`
+- ordered: `ol`, each item inside should be wrapped in `li`
+    - `li`s can be nested for sub-items
+- description: `dl`, each item inside should be wrapped in `dt` (description term), and inside `dt`, things should be wrapped inside `dd` (description definition) element
+    - a single `dt` can have multiple `dd`s

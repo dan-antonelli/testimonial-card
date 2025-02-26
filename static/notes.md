@@ -92,7 +92,17 @@ html
     - use n more than 3 heading types out of the 6 on a page
 - headings are considered by SEO, bcs search engines indexing the page consider the headings as keywords
 
-### Semantic vs representational elements
+### Semantic vs presentational elements
 
 - semantics: like when at a traffic light, red means stop, green means stop
 -  headings like `hX` are semantic elements. you can use `span` for example instead, but it has no semantic value
+
+# Emphasis and importance
+
+- italics/emphasis: can use `em`, together with `span` and `i` and some markup
+- bold/strong importance: `strong` element, possibly together with `span`, CSS, and `b` element
+    - the above two can be mixed
+
+## Italic, bold, underline
+
+- `b`, `i`, `u` - presentational, frowned upon
